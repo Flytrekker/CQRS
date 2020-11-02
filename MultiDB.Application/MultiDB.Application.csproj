@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>fa24e8a9-31d9-43b9-9894-bea0900ddfc8</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MultiDB.Database\MultiDB.Database.csproj" />
+    <ProjectReference Include="..\MultiDB.MSSQLDatabase\MultiDB.MSSQLDatabase.csproj" />
+    <ProjectReference Include="..\MultiDB.MySQLDatabase\MultiDB.MySQLDatabase.csproj" />
+  </ItemGroup>
+
+</Project>
